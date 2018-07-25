@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.7.0" group="fields" method="upgrade">
+	<name>plg_fields_osm</name>
+	<author>Elisa Foltyn</author>
+	<creationDate>2017</creationDate>
+	<copyright>www.coolcat-creations.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@coolcat-creations.com</authorEmail>
+	<authorUrl>www.coolcat-creations.com</authorUrl>
+	<version>1.0.0-alpha</version>
+	<description>PLG_FIELDS_OSM_DESC</description>
+
+	<files>
+		<filename plugin="osm">osm.php</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<language folder="language">
+		<language tag="en-GB">en-GB.plg_fields_osm.ini</language>
+		<language tag="en-GB">en-GB.plg_fields_osm.sys.ini</language>
+	</language>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="opencageapi"
+				       type="text"
+				       default=""
+				       label="Open Cage API KEY"
+				       filter="raw"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

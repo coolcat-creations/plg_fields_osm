@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+
+			<field
+				name="mapheight"
+				type="number"
+				default="500"
+				label="Map Height"
+				description="in px"
+				min="100"
+				step="100"
+			/>
+
+		</fieldset>
+	</fields>
+</form>
