@@ -41,14 +41,13 @@ $doc->addScript('https://cdn.jsdelivr.net/leaflet/1/leaflet.js');
 
 <script>
 
-	(function ($) {
+	(function() {
 
 		var map;
 		var marker;
 
-		$(function () {
+		document.addEventListener('DOMContentLoaded', function() {
 			// Initialize the map
-			// This variable map is inside the scope of the jQuery function.
 
 			// Now map reference the global map declared in the first line
 			map = L.map('map').setView([<?php echo $lat . ',' . $lon; ?>], 12);
@@ -61,7 +60,7 @@ $doc->addScript('https://cdn.jsdelivr.net/leaflet/1/leaflet.js');
 
 		});
 
-	})(jQuery);
+	})();
 
 </script>
 
